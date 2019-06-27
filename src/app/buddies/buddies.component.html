@@ -1,0 +1,9 @@
+<div class="s">
+  <h2>My Buddies</h2>
+  <div class="card " style="width: 50%;" *ngFor="let buddie of fBuddies">
+    <div class="card-body" >
+      <img class="card-img-top" [src]="buddie.img">
+      <p>{{buddie.id}}</p>
+    </div>
+  </div>
+</div>

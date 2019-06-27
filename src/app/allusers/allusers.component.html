@@ -1,0 +1,29 @@
+<div class="search">
+  <input [(ngModel)]="search" (ngModelChange)="searchFriends()" class="mr-sm-2" type="search" placeholder="Search Buddy" >
+</div>
+<h2>My Buddies</h2>
+<div class="fatherBox">
+<div class="s">
+  <!-- pintar user cuando valor true -->
+  <div class="scroll">
+    <div class="card " *ngFor="let user of allusers" >
+      <div class="card-body" (click)="click()">
+        <img class="card-img-top" [src]="user.img">
+        <p>{{ user.name }}</p>
+        <p>{{ user.username }}</p>
+        <p>{{ user.location }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d" hidden>
+  <div class="scroll">
+    <div class="card ">
+      <div class="card-body" >
+        <p>hola</p>
+      </div>
+      <button class="btn btn-outline-danger">request friendship</button>
+    </div>
+  </div>
+</div>
+</div>

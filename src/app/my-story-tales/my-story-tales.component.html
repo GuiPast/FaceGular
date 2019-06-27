@@ -1,0 +1,11 @@
+<div class="s">
+  <h2>My StoryTales</h2>
+  <div class="card " style="width: 50%;" *ngFor="let story of stories">
+    <div class="card-body">
+      <p>{{story.user.name}}</p>
+      <p class="card-date">{{story.date | date:'EEEE, dd/MM/yyyy'}}</p>
+      <img class="card-img-top" [src]="story.user.img">
+      <p class="card-text">{{story.storytale}}</p>
+    </div>
+  </div>
+</div>

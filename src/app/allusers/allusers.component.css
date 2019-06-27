@@ -1,0 +1,46 @@
+.s{
+    background-color:#ccc;
+
+    width:50%;
+
+}
+.fatherBox{
+    background-color:#ccc;
+
+    display:flex;
+}
+h2{
+    background-color:#ccc;
+}
+img{
+    width: 10vw;
+}
+.scroll{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.card-body{
+    display: flex;
+}
+.d{
+    background-color:#ccc;
+    width:50%;
+}
+p{
+    padding-top: 10%;
+    padding-left: 5%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow:1;
+}
+
+
+input{
+    width:70%;
+}
+
+
+.search{
+    padding-left: 20%;
+    background-color:#ccc;
+}

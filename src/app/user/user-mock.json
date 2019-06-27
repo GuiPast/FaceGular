@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Guillermo Pastor",
+      "age": 25,
+      "username": "Crawsom",
+      "location": "Sant Vicent del Raspeig",
+      "startdate": "21/06/2019",
+      "img": "assets/profile.jpg",
+      "password": "123456789",
+      "website": ""
+    },
+    {
+      "id": 2,
+      "name": "Angel Banegas",
+      "age": 23,
+      "username": "Angular",
+      "location":"Sant Vicent del Raspeig",
+      "startdate": "10/01/2019",
+      "img": "assets/angel.jpg",
+      "password": "123456789"
+    },
+    {
+      "id": 3,
+      "name": "Mario Martinez",
+      "age": 24,
+      "username": "Super MariónBros",
+      "location":"Elda Sity/ City of Gipsies",
+      "startdate": "27/06/2019",
+      "img": "assets/mario.jpg",
+      "password": "123456789"
+    },
+    {
+      "id": 4,
+      "name": "Tomás Palma",
+      "age": 28,
+      "username": "Tomasio Puntos de Salud",
+      "location":"SanJu",
+      "startdate": "27/06/2019",
+      "img": "assets/tomas.jpg",
+      "password": "123456789"
+    },
+    {
+      "id": 5,
+      "name": "Sara Abad",
+      "age": 26,
+      "username": "Sarus",
+      "location":"Sant Vicent del Raspeig",
+      "startdate": "27/06/2019",
+      "img": "assets/sara.jpg",
+      "password": "123456789"
+    }
+  ],
+  "story": [
+    {
+      "id": 1,
+      "date": 1561555370192,
+      "user": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "username": "Crawsom",
+        "img": "assets/profile.jpg"
+      },
+      "storytale": "askdjksalsdjlksaf123"
+    },
+    {
+      "id": 2,
+      "date": 1561555370192,
+      "user": {
+        "id": 2,
+        "name": "Angel Banegas",
+        "username": "Angular",
+        "img": "assets/angel.jpg"
+      },
+      "storytale": "PatataMan"
+    },
+    {
+      "id": 3,
+      "date": 1561559908048,
+      "user": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "username": "Crawsom",
+        "img": "assets/profile.jpg"
+      },
+      "storytale": "dsfsdfsdfs"
+    },
+    {
+      "id": 4,
+      "date": 1561560052681,
+      "user": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "username": "Crawsom",
+        "img": "assets/profile.jpg"
+      },
+      "storytale": "Lorem fistrum sexuarl pecador diodeno se calle ustée ese pedazo de. Hasta luego Lucas al ataquerl te voy a borrar el cerito a peich quietooor te voy a borrar el cerito jarl no te digo trigo por no llamarte Rodrigor va usté muy cargadoo mamaar benemeritaar. Ahorarr diodenoo ese que llega a wan jarl pupita te voy a borrar el cerito apetecan. Ese hombree condemor ese que llega diodenoo condemor. Diodeno diodeno no puedor está la cosa muy malar pupita se calle ustée me cago en tus muelas al ataquerl diodeno a gramenawer te voy a borrar el cerito. Ese que llega me cago en tus muelas condemor ese hombree papaar papaar me cago en tus muelas no te digo trigo por no llamarte Rodrigor por la gloria de mi madre está la cosa muy malar al ataquerl.\n\nEse que llega a wan se calle ustée pecador. No te digo trigo por no llamarte Rodrigor torpedo ese que llega te va a hasé pupitaa de la pradera se calle ustée te va a hasé pupitaa jarl mamaar hasta luego Lucas al ataquerl. No puedor tiene musho peligro a peich me cago en tus muelas ese hombree diodenoo jarl a wan ese que llega condemor. Ese que llega pecador ese hombree ahorarr quietooor la caidita apetecan. Ese que llega está la cosa muy malar te voy a borrar el cerito diodeno.\n\nEse que llega quietooor a peich ese que llega. Quietooor llevame al sircoo pupita hasta luego Lucas ese que llega diodenoo de la pradera. A gramenawer de la pradera la caidita a peich llevame al sircoo de la pradera está la cosa muy malar ahorarr. No puedor por la gloria de mi madre no te digo trigo por no llamarte Rodrigor va usté muy cargadoo ese que llega apetecan jarl te va a hasé pupitaa va usté muy cargadoo por la gloria de mi madre. Pecador a peich mamaar llevame al sircoo papaar papaar a gramenawer por la gloria de mi madre de la pradera pupita al ataquerl me cago en tus muelas."
+    },
+    {
+      "id": 5,
+      "date": 1561560163168,
+      "user": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "username": "Crawsom",
+        "img": "assets/profile.jpg"
+      },
+      "storytale": "yo que tal\nque os contais\n"
+    }
+  ],
+  "loggeduser": [
+    {
+      "id": 1,
+      "name": "Guillermo Pastor",
+      "age": 25,
+      "username": "Crawsom",
+      "location": "Sant Vicent del Raspeig",
+      "startdate": "21/06/2019",
+      "img": "assets/profile.jpg",
+      "password": "123456789",
+      "website": ""
+    }
+  ],
+  "userrelationships": [
+    {
+      "id": 1,
+      "idsent": 1,
+      "idreceive": 2,
+      "state": 1 
+    }
+  ]
+}
