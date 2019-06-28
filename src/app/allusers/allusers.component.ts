@@ -14,33 +14,25 @@ export class AllUsersComponent implements OnInit {
 
   @Input() allusers:User[];
   @Input() userLogged:User;
+
   userSelected:User;
-  usersCopy:User[] = this.allusers;
   search:string;
   friendship:Relationship;
+  allFriendships:Relationship[];
+
   constructor(private myBuddies: MyBuddiesComponent, private searchService:SearchService,
     private friendshipService:BuddiesService) { }
 
   ngOnInit() {
-
+    this.getFriends();
   }
 
-  //Busca DPM
   searchFriends(){
     if(this.search.trim().length === 0){
       this.myBuddies.getAllUsers();
     }else{
       this.searchService.searchUser(this.search).subscribe((data: User[]) => this.allusers = data);
     }
-  //Funciona, pero es cutre salchichero
-/*     if(this.allusers !== undefined){
-      this.allusers = this.allusers.filter(
-        user => user.name.toLowerCase().includes(this.search.toLowerCase()));
-      this.flag=true;
-    }
-    if(this.flag = false){
-      this.myBuddies.getAllUsers();
-    } */
   }
 
   userSelectedF(user:User){
@@ -60,5 +52,11 @@ export class AllUsersComponent implements OnInit {
     this.friendship.userreceive=user;
     this.friendship.usersent=this.userLogged;
     this.friendshipService.postFriendship(this.friendship).subscribe();
+  }
+
+  getFriends(){
+    this.friendshipService.getRequestFriendship().subscribe((data :Relationship[]) => {
+      this.allFriendships = data;
+    });
   }
 }

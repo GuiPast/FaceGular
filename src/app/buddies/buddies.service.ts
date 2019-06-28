@@ -17,10 +17,14 @@ export class BuddiesService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(){
-    return this.http.get(`${URL_BASE}?state=1`);
+  getFrienships(){
+    return this.http.get(`${URL_BASE}?state=1&usersent.id=1`);
   }
-  
+
+  getRequestFriendship(){
+    return this.http.get(`${URL_BASE}?state=0&usersent.id=1`);
+  }
+
   getUserById(id: number){
     const url = `${URL_BASE_USER}/${id}`;
     return this.http.get(url);

@@ -23,7 +23,7 @@ export class UserService {
     return this.http.get(URL_BASE);
   }
   getLoggedUsers(){
-    return this.http.get(`${URL_LOGGED_USER}/1`);
+    return this.http.get(`${URL_BASE}/1`);
   }
 
   getUser(id: number) {

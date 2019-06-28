@@ -107,6 +107,17 @@
         "img": "assets/profile.jpg"
       },
       "storytale": "yo que tal\nque os contais\n"
+    },
+    {
+      "id": 6,
+      "date": 1561734438511,
+      "user": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "username": "Crawsom",
+        "img": "assets/profile.jpg"
+      },
+      "storytale": "Hola que tal"
     }
   ],
   "loggeduser": [
@@ -133,6 +144,52 @@
         "username": "Sarus",
         "location": "Sant Vicent del Raspeig",
         "img": "assets/sara.jpg"
+      },
+      "usersent": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "age": 25,
+        "username": "Crawsom",
+        "location": "Sant Vicent del Raspeig",
+        "startdate": "21/06/2019",
+        "img": "assets/profile.jpg",
+        "password": "123456789",
+        "website": ""
+      }
+    },
+    {
+      "id": 1,
+      "state": 0,
+      "userreceive": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "age": 25,
+        "username": "Crawsom",
+        "location": "Sant Vicent del Raspeig",
+        "startdate": "21/06/2019",
+        "img": "assets/profile.jpg",
+        "password": "123456789",
+        "website": ""
+      },
+      "usersent": {
+        "id": 5,
+        "name": "Sara Abad",
+        "age": 26,
+        "username": "Sarus",
+        "location": "Sant Vicent del Raspeig",
+        "img": "assets/sara.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "state": 1,
+      "userreceive": {
+        "id": 2,
+        "name": "Angel Banegas",
+        "age": 23,
+        "username": "Angular",
+        "location": "Sant Vicent del Raspeig",
+        "img": "assets/angel.jpg"
       },
       "usersent": {
         "id": 1,

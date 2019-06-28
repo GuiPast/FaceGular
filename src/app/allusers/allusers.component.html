@@ -1,33 +1,34 @@
 <div class="search">
-  <input [(ngModel)]="search" (ngModelChange)="searchFriends()" class="mr-sm-2" type="search" placeholder="Search Buddy" >
+  <input [(ngModel)]="search" (ngModelChange)="searchFriends()" class="mr-sm-2" type="search"
+    placeholder="Search Buddy">
 </div>
 <h2>My Buddies</h2>
 <div class="fatherBox">
-<div class="s">
-  <div class="scroll">
-    <div class="card " *ngFor="let user of allusers" >
-      <div class="card-body" (click)="userSelectedF(user)">
-        <img class="card-img-top" [src]="user.img">
-        <p>{{ user.name }}</p>
-        <p>{{ user.username }}</p>
-        <p>{{ user.location }}</p>
+  <div class="s">
+    <div class="scroll">
+      <div class="card " *ngFor="let user of allusers">
+        <div class="card-body" (click)="userSelectedF(user)">
+          <img class="card-img-top" [src]="user.img">
+          <p>{{ user.name }}</p>
+          <p>{{ user.username }}</p>
+          <p>{{ user.location }}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="d" *ngIf="userSelected">
-  <div class="scroll">
-    <div class="card ">
-      <div class="card-body" >
-        <img class="card-img-top" [src]="userSelected.img">
-        <p>{{userSelected.name}}</p>
-        <p>{{ userSelected.username }}</p>
-        <p>{{ userSelected.location }}</p>
-        <p>{{ userSelected.age }} Años</p>
+  <div class="d" *ngIf="userSelected">
+    <div class="scroll">
+      <div class="card ">
+        <div class="card-body">
+          <img class="card-img-top" [src]="userSelected.img">
+          <p>{{userSelected.name}}</p>
+          <p>{{ userSelected.username }}</p>
+          <p>{{ userSelected.location }}</p>
+          <p>{{ userSelected.age }} Años</p>
+        </div>
+        <button class="btn btn-outline-danger" (click)="requestFriend(userSelected)">
+          Request Friendship</button>
       </div>
-      <button class="btn btn-outline-danger" (click)="requestFriend(userSelected)">
-        Request Friendship</button>
     </div>
   </div>
-</div>
 </div>

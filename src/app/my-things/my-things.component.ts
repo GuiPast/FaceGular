@@ -24,7 +24,7 @@ export class MyThingsComponent implements OnInit {
     this.storyService.getStoryByUser().subscribe((data: StoryTales[]) => this.stories = data);
   }
   getMyBuddies() {
-    this.buddiesService.getUsers().subscribe(
+    this.buddiesService.getFrienships().subscribe(
       (data: Relationship[]) => this.buddies=data);
   }
 }
