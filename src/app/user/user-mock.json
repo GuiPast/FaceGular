@@ -16,7 +16,7 @@
       "name": "Angel Banegas",
       "age": 23,
       "username": "Angular",
-      "location":"Sant Vicent del Raspeig",
+      "location": "Sant Vicent del Raspeig",
       "startdate": "10/01/2019",
       "img": "assets/angel.jpg",
       "password": "123456789"
@@ -26,7 +26,7 @@
       "name": "Mario Martinez",
       "age": 24,
       "username": "Super MariónBros",
-      "location":"Elda Sity/ City of Gipsies",
+      "location": "Elda Sity/ City of Gipsies",
       "startdate": "27/06/2019",
       "img": "assets/mario.jpg",
       "password": "123456789"
@@ -36,7 +36,7 @@
       "name": "Tomás Palma",
       "age": 28,
       "username": "Tomasio Puntos de Salud",
-      "location":"SanJu",
+      "location": "SanJu",
       "startdate": "27/06/2019",
       "img": "assets/tomas.jpg",
       "password": "123456789"
@@ -46,7 +46,7 @@
       "name": "Sara Abad",
       "age": 26,
       "username": "Sarus",
-      "location":"Sant Vicent del Raspeig",
+      "location": "Sant Vicent del Raspeig",
       "startdate": "27/06/2019",
       "img": "assets/sara.jpg",
       "password": "123456789"
@@ -125,9 +125,26 @@
   "userrelationships": [
     {
       "id": 1,
-      "idsent": 1,
-      "idreceive": 2,
-      "state": 1 
+      "state": 0,
+      "userreceive": {
+        "id": 5,
+        "name": "Sara Abad",
+        "age": 26,
+        "username": "Sarus",
+        "location": "Sant Vicent del Raspeig",
+        "img": "assets/sara.jpg"
+      },
+      "usersent": {
+        "id": 1,
+        "name": "Guillermo Pastor",
+        "age": 25,
+        "username": "Crawsom",
+        "location": "Sant Vicent del Raspeig",
+        "startdate": "21/06/2019",
+        "img": "assets/profile.jpg",
+        "password": "123456789",
+        "website": ""
+      }
     }
   ]
 }

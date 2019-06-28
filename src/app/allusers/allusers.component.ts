@@ -3,6 +3,7 @@ import { BuddiesService } from '../buddies/buddies.service';
 import { User } from '../Entities/user.model';
 import { MyBuddiesComponent } from '../my-buddies/my-buddies.component';
 import { SearchService } from './search.service';
+import { Relationship } from '../Entities/userrelationship.model';
 
 @Component({
   selector: 'app-allusers',
@@ -12,11 +13,16 @@ import { SearchService } from './search.service';
 export class AllUsersComponent implements OnInit {
 
   @Input() allusers:User[];
+  @Input() userLogged:User;
+  userSelected:User;
   usersCopy:User[] = this.allusers;
   search:string;
-  constructor(private myBuddies: MyBuddiesComponent, private searchService:SearchService) { }
+  friendship:Relationship;
+  constructor(private myBuddies: MyBuddiesComponent, private searchService:SearchService,
+    private friendshipService:BuddiesService) { }
 
   ngOnInit() {
+
   }
 
   //Busca DPM
@@ -37,7 +43,22 @@ export class AllUsersComponent implements OnInit {
     } */
   }
 
-  click(){
-    alert("hola que tal");
+  userSelectedF(user:User){
+    this.userSelected=new User();
+    this.userSelected.id=user.id;
+    this.userSelected.name=user.name;
+    this.userSelected.age=user.age;
+    this.userSelected.username=user.username;
+    this.userSelected.location= user.location;
+    this.userSelected.img=user.img;
+  }
+
+  requestFriend(user:User){
+    this.friendship = new Relationship();
+    this.friendship.id=null;
+    this.friendship.state=0;
+    this.friendship.userreceive=user;
+    this.friendship.usersent=this.userLogged;
+    this.friendshipService.postFriendship(this.friendship).subscribe();
   }
 }

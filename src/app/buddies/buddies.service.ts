@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { Relationship } from '../Entities/userrelationship.model';
 
 const URL_BASE:string= 'http://localhost:3000/userrelationships';
 const URL_BASE_USER:string= 'http://localhost:3000/users';
@@ -27,5 +28,10 @@ export class BuddiesService {
 
   getAllUsers(){
     return this.http.get(`${URL_BASE_USER}?id_ne=1`);
+  }
+
+  postFriendship(friendship:Relationship){
+    const url = `${URL_BASE}`;
+    return this.http.post(url,friendship,httpOptions);
   }
 }

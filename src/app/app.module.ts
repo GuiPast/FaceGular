@@ -20,6 +20,7 @@ import { BuddiesComponent } from './buddies/buddies.component';
 import { BuddiesService } from './buddies/buddies.service';
 import { AllUsersComponent } from './allusers/allusers.component';
 import { SearchService } from './allusers/search.service';
+import { UserSelectedComponent } from './user-selected/user-selected.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SearchService } from './allusers/search.service';
     MyBuddiesComponent,
     SearchBuddiesComponent,
     BuddiesComponent,
-    AllUsersComponent
+    AllUsersComponent,
+    UserSelectedComponent
   ],
   imports: [
     BrowserModule,
