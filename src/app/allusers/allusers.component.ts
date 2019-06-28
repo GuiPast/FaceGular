@@ -55,8 +55,18 @@ export class AllUsersComponent implements OnInit {
   }
 
   getFriends(){
-    this.friendshipService.getRequestFriendship().subscribe((data :Relationship[]) => {
+    this.friendshipService.getFrienships().subscribe((data :Relationship[]) => {
       this.allFriendships = data;
     });
+  }
+  getStatus(friend:User,){
+    let status = -1;
+    this.allFriendships.map(request => {
+      if(request.userreceive.id == friend.id){
+        status=request.state;
+        return true;
+      }
+    });
+    return status;
   }
 }

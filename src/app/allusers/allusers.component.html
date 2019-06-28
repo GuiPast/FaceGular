@@ -26,8 +26,12 @@
           <p>{{ userSelected.location }}</p>
           <p>{{ userSelected.age }} Años</p>
         </div>
-        <button class="btn btn-outline-danger" (click)="requestFriend(userSelected)">
+        <button *ngIf="getStatus(userSelected) === -1" class="btn btn-outline-danger" (click)="requestFriend(userSelected)">
           Request Friendship</button>
+        <button *ngIf="getStatus(userSelected) === 0" class="btn btn-outline-danger" >
+          Waiting Friendship</button>
+        <button *ngIf="getStatus(userSelected) === 1" class="btn btn-outline-danger" >
+          Cancel Friendship</button>
       </div>
     </div>
   </div>

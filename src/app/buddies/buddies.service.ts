@@ -18,11 +18,7 @@ export class BuddiesService {
   constructor(private http: HttpClient) { }
 
   getFrienships(){
-    return this.http.get(`${URL_BASE}?state=1&usersent.id=1`);
-  }
-
-  getRequestFriendship(){
-    return this.http.get(`${URL_BASE}?state=0&usersent.id=1`);
+    return this.http.get(`${URL_BASE}?usersent.id=1`);
   }
 
   getUserById(id: number){
